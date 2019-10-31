@@ -1,0 +1,17 @@
+.login{
+    width: 400px;
+    height: 400px;
+    background: #ffad66;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login input{
+    margin: 5px;
+}

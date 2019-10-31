@@ -1,0 +1,17 @@
+.bar{
+    width:  calc(100% - 80px);
+    height: 80px;
+    background: orangered;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 40px;
+}
+
+.icons{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+
+}
+

@@ -1,0 +1,20 @@
+.categories{
+
+    position: fixed;
+    top: 100px;
+    width: 15%;
+
+    height: calc(100vh - 120px);
+    /*background: green;*/
+    overflow: auto;
+    border-right: solid 2px grey;
+}
+
+.cat p{
+    font-size: 25px;
+}
+
+.cat p:hover{
+    font-size: 30px;
+}
+

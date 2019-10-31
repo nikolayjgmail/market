@@ -1,0 +1,78 @@
+.basketMain {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*display: none;*/
+    overflow: auto;
+    z-index: 1;
+    background: rgba(1, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*-webkit-filter: blur(5px);*/
+    /*-moz-filter: blur(5px);*/
+    /*-o-filter: blur(5px);*/
+    /*-ms-filter: blur(5px);*/
+    /*filter: blur(5px);*/
+}
+
+.basketField {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    background: #d7c8b7;
+
+}
+
+.basketComponent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.basketComponent img {
+
+    width: 60px;
+    height: 60px;
+}
+
+.basketComponent a{
+    font-size: 40px;
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+}
+
+.countGoods {
+position: absolute;
+    margin-left: 50px;
+    margin-top: 40px;
+
+
+}
+
+.total{
+    /*text-align: right;*/
+    position: absolute;
+    right: 10px;
+    bottom:60px
+}
+
+.buy{
+  /*text-align: right;*/
+    position: absolute;
+    right: 10px;
+    bottom:10px
+}
+.buy button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline:none ;
+    border-radius: 5px;
+
+}
