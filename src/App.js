@@ -41,9 +41,11 @@ class App extends Component {
         catFiltered: '',
         test: 0,
         usersArr: [],
+
     };
 
   componentDidMount() {
+
       fetch('http://localhost/market/data.json')
           .then((res)=>res.json())
           .then((res)=>this.setState({data:res}));
@@ -97,7 +99,8 @@ class App extends Component {
     displayBasket = (e) => {
         e.stopPropagation();
         // console.log(this.state.basket[this.state.user])
-        this.state.basket[this.state.user] && this.setState({dispBasket: true})
+        // this.state.basket[this.state.user] && this.setState({dispBasket: true})
+         this.setState({dispBasket: true})
 
     };
 
@@ -174,7 +177,7 @@ return {
 
     render() {
         const {hideBasket, displayBasket, hideDetails, displayLogin, actionCategories, showDetails, inBasket, delGoods, search, loginUser, registerUser} = this;
-        const {basket, catFiltered, detailsElem, display, data, user, dispBasket, dispLogin} = this.state;
+        const {basket, catFiltered, detailsElem, display, data, user, dispBasket, dispLogin,arr2} = this.state;
 
         return (
             <div className="app">
@@ -187,8 +190,10 @@ return {
                     }
 
                     {
+
                         dispBasket &&
-                        <Basket objGoods={basket} hideBasket={hideBasket} delGoods={delGoods} user={user}/>
+                        <Basket objGoods={basket} hideBasket={hideBasket} delGoods={delGoods} user={user} />
+
 
                     }
 

@@ -9,9 +9,26 @@ class Basket extends Component {
 
     render() {
 
-        const {objGoods, hideBasket, delGoods, user} = this.props;
+        const {objGoods, hideBasket, delGoods, user,} = this.props;
+
+        //работает! (добавлять товары в корзину)
         let arr = objGoods[user];
+
+
+        //не работает((( ( хотя это тоже массив обьектов)
+        // let arr=[{a:1},{a:2},{a:1},{a:2},]
+
+        console.log(arr);
+
+
+
         let renderArr = [...new Set(arr)];
+
+        console.log(renderArr)
+
+
+
+
         let total = 0;
         arr.map((el) => {
             total = total + Number(el.price)
